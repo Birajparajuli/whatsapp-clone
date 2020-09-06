@@ -12,11 +12,12 @@ var firebaseConfig = {
     measurementId: "G-RP0T98WW2C"
   };
   // Initialize Firebase
+
+
   const firebaseApp = firebase.initializeApp(firebaseConfig);
-
-  cosnt db = firebaseApp.firestore();
+  const db = firebaseApp.firestore();
   const auth = firebase.auth();
-  const provider = new firenase.auth.GoogleAuthProvider();
+  const provider = new firebase.auth.GoogleAuthProvider();
 
-  export {auth, provider};
+  export{auth, provider};
   export default db;
